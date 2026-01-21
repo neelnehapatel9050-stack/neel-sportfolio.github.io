@@ -202,27 +202,6 @@
                 transform: translateX(0);
             }
         }
-        /* Mobile devices */
-@media (max-width: 768px) {
-    nav {
-        flex-direction: column;
-        height: auto;
-    }
-
-    nav ul {
-        flex-direction: column;
-        padding: 10px;
-    }
-
-    nav ul li {
-        margin: 10px 0;
-    }
-
-    .container {
-        padding: 15px;
-    }
-}
-
 
         .firstsection {
             animation: fadeInUp 1s ease-out;
@@ -257,6 +236,96 @@
 
         .contact-details a {
             transition: color 0.3s ease;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            nav {
+                flex-direction: column;
+                height: auto;
+                padding: 20px 0;
+            }
+
+            nav ul {
+                flex-direction: column;
+                margin-top: 20px;
+            }
+
+            nav ul li {
+                margin: 10px 0;
+            }
+
+            .firstsection {
+                flex-direction: column;
+                text-align: center;
+                margin: 50px 0;
+            }
+
+            .firstsection > div {
+                width: 100%;
+            }
+
+            .leftsection {
+                font-size: 150%;
+                margin: 30px 0;
+            }
+
+            .rightsection img {
+                width: 80%;
+                height: auto;
+                margin: 20px 0;
+            }
+
+            .secondSection {
+                max-width: 90vw;
+                margin: auto;
+                margin-top: 5%;
+            }
+
+            .secondSection h1 {
+                font-size: 1.5rem;
+            }
+
+            .services-list,
+            .projects-list {
+                flex-direction: column;
+            }
+
+            .service,
+            .project {
+                width: 100%;
+                margin-bottom: 20px;
+            }
+
+            .contact-details p {
+                font-size: 1rem;
+            }
+        }
+
+        @media (min-width: 769px) and (max-width: 1024px) {
+            .firstsection > div {
+                width: 45%;
+            }
+
+            .service,
+            .project {
+                width: 45%;
+            }
+
+            .leftsection {
+                font-size: 200%;
+            }
+        }
+
+        @media (min-width: 1025px) {
+            .firstsection > div {
+                width: 30%;
+            }
+
+            .service,
+            .project {
+                width: 30%;
+            }
         }
     </style>
 </head>
@@ -353,6 +422,5 @@
 
 
 </body>
-
 
 </html>
